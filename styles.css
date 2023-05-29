@@ -1,0 +1,30 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+}
+
+/* google the css "transform" property and look around what you can do.
+   If you're really creative you can do some impressive stuff with this. */
+
+/* start of the animation */
+.hidden {
+    opacity: 0;
+    transition: all 5s;
+    /* If you want it to jump in from the right, do this instead of "opacity". */
+    /* transform: translateX(100%); */
+}
+
+/* end of the animation */
+.show {
+    opacity: 1;
+    /* 0% means the location it's supposed to be so the text comes from the right and "transforms" to the original location. */
+    /* transform: translateX(0%); */
+}
